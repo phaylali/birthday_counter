@@ -1,0 +1,81 @@
+name: birthday_counter
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: 
+  go_router: 
+  intl: 
+  shared_preferences: 
+  flutter_launcher_icons: 
+  package_rename: 
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: 
+    generate: true
+    remove_alpha_ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21 
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    icon_size: 48 
+  macos:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    remove_alpha_ios: true
+
+package_rename_config:
+  android:
+    app_name: Age Birthday Counter by Omniversify
+    package_name: com.omniversify.agecounter
+    override_old_package: com.example.birthday_counter
+    lang: kotlin
+
+  ios:
+    app_name: Age Birthday Counter by Omniversify
+    bundle_name: agecounter
+    package_name: com.omniversify.agecounter
+
+  web:
+    app_name: Age Birthday Counter by Omniversify
+    description: App to Simply Calculate Your exact Age
+
+  linux:
+    app_name: Age Birthday Counter by Omniversify
+    package_name: com.omniversify.agecounter
+    exe_name: agecounter-omniversify-linux-x64
+
+  windows:
+    app_name: Age Birthday Counter by Omniversify
+    organization: Omniversify
+    copyright_notice: Copyright ©️ 2024 Omniversify. All rights reserved.
+    exe_name: agecounter-omniversify-win32
+
+  macos:
+    app_name: Age Birthday Counter by Omniversify
+    package_name: com.omniversify.agecounter
+    copyright_notice: Copyright ©️ 2024 Omniversify. All rights reserved.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
