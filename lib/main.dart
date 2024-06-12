@@ -56,7 +56,108 @@ class HomeScreen extends ConsumerWidget {
             icon: const Icon(Icons.brightness_6),
             onPressed: () => themeNotifier.toggleTheme(),
           ),
+          Builder(
+            builder: (context) => IconButton(
+              icon: const Icon(Icons.settings),
+              onPressed: () => Scaffold.of(context).openEndDrawer(),
+            ),
+          ),
         ],
+      ),
+      endDrawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Theme.of(context).primaryColor,
+              ),
+              child: const Text(
+                'Settings',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.info),
+              title: const Text('About'),
+              onTap: () {
+                Navigator.pop(context);
+                showDialog(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    title: const Text('About'),
+                    content: const Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Studio: Omniversify'),
+                        Text('Developer: Phaylali'),
+                        Text('Version: 1.0.0'),
+                        SizedBox(height: 8),
+                        Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(text: 'Made with '),
+                              WidgetSpan(
+                                child: Icon(
+                                  Icons.favorite,
+                                  color: Colors.blue,
+                                  size: 16,
+                                ),
+                              ),
+                              TextSpan(text: ' in Morocco'),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 8),
+                        Text('Powered by Flutter'),
+                      ],
+                    ),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context),
+                        child: const Text('Close'),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.book),
+              title: const Text('Licenses'),
+              onTap: () {
+                Navigator.pop(context);
+                showLicensePage(context: context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.privacy_tip),
+              title: const Text('Privacy'),
+              onTap: () {
+                Navigator.pop(context);
+                showDialog(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    title: const Text('Privacy Policy'),
+                    content: const Text(
+                      'This is a simple age calculator app that does not collect any personal data.',
+                    ),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context),
+                        child: const Text('Close'),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
       ),
       body: Center(
         child: Padding(
