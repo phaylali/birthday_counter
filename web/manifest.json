@@ -1,6 +1,6 @@
 {
-    "name": "Age Birthday Counter by Omniversify",
-    "short_name": "Age Birthday Counter by Omniversify",
+    "name": "Age Calculator by Omniversify",
+    "short_name": "Age Calculator by Omniversify",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

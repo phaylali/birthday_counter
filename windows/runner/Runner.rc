@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "Omniversify" "\0"
-            VALUE "FileDescription", "Age Birthday Counter by Omniversify" "\0"
+            VALUE "FileDescription", "Age Calculator by Omniversify" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "Age Birthday Counter by Omniversify" "\0"
+            VALUE "InternalName", "Age Calculator by Omniversify" "\0"
             VALUE "LegalCopyright", "Copyright ©️ 2024 Omniversify. All rights reserved." "\0"
             VALUE "OriginalFilename", "agecounter-omniversify-win32.exe" "\0"
-            VALUE "ProductName", "Age Birthday Counter by Omniversify" "\0"
+            VALUE "ProductName", "Age Calculator by Omniversify" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

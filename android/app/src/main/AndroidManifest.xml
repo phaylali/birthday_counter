@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="Age Birthday Counter by Omniversify"
+        android:label="Age Calculator by Omniversify"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
