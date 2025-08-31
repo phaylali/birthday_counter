@@ -12,24 +12,19 @@ Privacy Friendly: This app does not collect any personal data.
 Additional Information:
 
 Developer: Omniversify
-Version: 1.0.0
+Version: 1.0.1
 Made with 💙 in Morocco
 Powered by Flutter
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 ---
 Built with 💖 by Omniversify
 
+<div style="width: 20%; height: 20%">  
+
+[![ko-fi](/support_me_on_kofi_beige.png)](https://ko-fi.com/D1D01CZ83J)
+
+</div>
+
 [![ReadMeSupportPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-project.svg)](https://donate.unrwa.org/-landing-page/en_EN)
+
+

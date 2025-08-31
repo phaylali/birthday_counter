@@ -1,13 +1,13 @@
 name: birthday_counter
-description: "A new Flutter project."
+description: "🎂 Age Calculator: Easily calculate your age 📅 and countdown to your next birthday 🎉. Built with Flutter 🛠️, GoRouter 🚦, Riverpod 🌊, and SharedPreferences 💾. "
 
 publish_to: 'none' 
 
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
+  sdk: ^3.10.0-74.0.dev
 
 dependencies:
   flutter:
@@ -25,7 +25,7 @@ flutter_launcher_icons:
     generate: true
     remove_alpha_ios: true
   image_path: "assets/icon/icon.png"
-  min_sdk_android: 21 
+  min_sdk_android: 26
   web:
     generate: true
     image_path: "assets/icon/icon.png"
@@ -62,19 +62,19 @@ package_rename_config:
   windows:
     app_name: Age Calculator by Omniversify
     organization: Omniversify
-    copyright_notice: Copyright ©️ 2024 Omniversify. All rights reserved.
+    copyright_notice: Copyright ©️ 2025 Omniversify. All rights reserved.
     exe_name: agecounter-omniversify-win32
 
   macos:
     app_name: Age Calculator by Omniversify
     package_name: com.omniversify.agecounter
-    copyright_notice: Copyright ©️ 2024 Omniversify. All rights reserved.
+    copyright_notice: Copyright ©️ 2025 Omniversify. All rights reserved.
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
+  flutter_lints: ^6.0.0
 
 flutter:
 

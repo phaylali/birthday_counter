@@ -31,9 +31,10 @@ class MyApp extends ConsumerWidget {
 
     return MaterialApp.router(
       title: 'Age & Birthday Calculator',
-      theme: ThemeData.light(),
+      theme: lightTheme,
+      darkTheme: darkTheme,
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData.dark(),
+      
       themeMode: themeMode,
       routerConfig: router,
     );
@@ -95,7 +96,7 @@ class HomeScreen extends ConsumerWidget {
                       children: [
                         Text('Studio: Omniversify'),
                         Text('Developer: Phaylali'),
-                        Text('Version: 1.0.0'),
+                        Text('Version: 1.0.1'),
                         SizedBox(height: 8),
                         Text.rich(
                           TextSpan(
@@ -307,11 +308,24 @@ class ResultScreen extends ConsumerWidget {
                       ),
                     ],
                   ),
+                  
+                ],
+              ),
+              Divider(height: 32.0, thickness: 2.0),
+              Table(
+                columnWidths: const {
+                  0: FlexColumnWidth(3),
+                  1: FlexColumnWidth(2),
+                },
+                children: [
+                  
+                  
+                  
                   TableRow(
                     children: [
                       const TableCell(
                         child: Text(
-                          'Hours:',
+                          'In Hours:',
                           textAlign: TextAlign.start,
                           style: TextStyle(fontSize: 18),
                         ),
@@ -330,16 +344,16 @@ class ResultScreen extends ConsumerWidget {
                     children: [
                       const TableCell(
                         child: Text(
-                          'Minutes:',
+                          'In Minutes:',
                           textAlign: TextAlign.start,
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(fontSize: 18),
                         ),
                       ),
                       TableCell(
                         child: Center(
                           child: Text(
                             '$minutes',
-                            style: const TextStyle(fontSize: 16),
+                            style: const TextStyle(fontSize: 18),
                           ),
                         ),
                       ),
@@ -349,16 +363,16 @@ class ResultScreen extends ConsumerWidget {
                     children: [
                       const TableCell(
                         child: Text(
-                          'Seconds:',
+                          'In Seconds:',
                           textAlign: TextAlign.start,
-                          style: TextStyle(fontSize: 14),
+                          style: TextStyle(fontSize: 18),
                         ),
                       ),
                       TableCell(
                         child: Center(
                           child: Text(
                             '$seconds',
-                            style: const TextStyle(fontSize: 14),
+                            style: const TextStyle(fontSize: 18),
                           ),
                         ),
                       ),
